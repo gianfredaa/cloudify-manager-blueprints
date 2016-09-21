@@ -60,7 +60,7 @@ def _create_db_tables(config):
 
 
 def _add_default_tenant():
-    t = Tenant(id='default_tenant')
+    t = Tenant(name='default_tenant')
     db.session.add(t)
     db.session.commit()
 
